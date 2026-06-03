@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kyllu Store VPN</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:sans-serif;
+}
+
+body{
+background:#edf2f7;
+padding-bottom:100px;
+}
+
+/* HEADER */
+
+.header{
+background:linear-gradient(180deg,#031c22,#06343d);
+padding:30px 20px;
+padding-top:50px;
+border-bottom-left-radius:35px;
+border-bottom-right-radius:35px;
+color:white;
+}
+
+.member{
+display:inline-block;
+padding:8px 15px;
+background:rgba(0,255,255,.1);
+border-radius:20px;
+font-size:13px;
+margin-bottom:20px;
+}
+
+.username{
+font-size:35px;
+font-weight:bold;
+}
+
+.sub{
+margin-top:5px;
+color:#b3c0c7;
+}
+
+/* SALDO */
+
+.saldo-box{
+background:white;
+margin:20px;
+margin-top:-30px;
+padding:20px;
+border-radius:25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.saldo-title{
+color:#8b98a5;
+font-size:14px;
+}
+
+.saldo{
+font-size:35px;
+font-weight:bold;
+margin-top:10px;
+}
+
+.topup{
+width:85px;
+height:85px;
+background:linear-gradient(135deg,#00c6ff,#0072ff);
+border-radius:25px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+font-weight:bold;
+text-decoration:none;
+}
+
+.topup i{
+font-size:24px;
+margin-bottom:5px;
+}
+
+/* MENU */
+
+.section{
+padding:0 20px;
+margin-top:25px;
+}
+
+.title{
+font-size:22px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+.menu{
+display:flex;
+gap:10px;
+overflow:auto;
+}
+
+.menu button{
+padding:14px 22px;
+border:none;
+border-radius:20px;
+background:white;
+font-weight:bold;
+color:#6b7280;
+}
+
+.menu .active{
+background:#00a99d;
+color:white;
+}
+
+/* SERVER */
+
+.server{
+background:white;
+margin-top:20px;
+padding:20px;
+border-radius:25px;
+box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+
+.server-top{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.server-name{
+font-size:22px;
+font-weight:bold;
+}
+
+.ping{
+background:#e9fff6;
+padding:6px 12px;
+border-radius:20px;
+color:#00b894;
+font-size:13px;
+font-weight:bold;
+}
+
+.provider{
+margin-top:8px;
+color:#7c8795;
+}
+
+.price{
+margin-top:15px;
+font-size:32px;
+font-weight:bold;
+color:#00a99d;
+}
+
+.price span{
+font-size:16px;
+}
+
+.buy{
+margin-top:18px;
+width:100%;
+padding:15px;
+border:none;
+border-radius:18px;
+background:linear-gradient(90deg,#00c6ff,#0072ff);
+color:white;
+font-size:17px;
+font-weight:bold;
+cursor:pointer;
+}
+
+/* NAVBAR */
+
+.navbar{
+position:fixed;
+bottom:0;
+left:0;
+right:0;
+background:white;
+padding:15px;
+display:flex;
+justify-content:space-around;
+border-top-left-radius:25px;
+border-top-right-radius:25px;
+box-shadow:0 -5px 20px rgba(0,0,0,.08);
+}
+
+.nav-item{
+text-align:center;
+font-size:13px;
+color:#8b98a5;
+}
+
+.nav-item i{
+display:block;
+font-size:22px;
+margin-bottom:5px;
+}
+
+.active-nav{
+color:#00a99d;
+font-weight:bold;
+}
+
+a{
+text-decoration:none;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+
+<div class="member">
+● KYLLU STORE MEMBER
+</div>
+
+<div class="username">
+Kyllu Store
+</div>
+
+<div class="sub">
+VPN Premium Super Cepat 🚀
+</div>
+
+</div>
+
+<div class="saldo-box">
+
+<div>
+<div class="saldo-title">
+SALDO TERSEDIA
+</div>
+
+<div class="saldo">
+Rp5.600
+</div>
+</div>
+
+<a target="_blank"
+href="https://api.whatsapp.com/send?phone=6283196398692&text=Halo%20Admin%20Saya%20ingin%20TopUp">
+
+<div class="topup">
+<i class="fa-solid fa-plus"></i>
+Top Up
+</div>
+
+</a>
+
+</div>
+
+<div class="section">
+
+<div class="title">
+Pilih Paket
+</div>
+
+<div class="menu">
+<button class="active">SSH</button>
+<button>VMESS</button>
+<button>VLESS</button>
+<button>TROJAN</button>
+</div>
+
+<div class="server">
+
+<div class="server-top">
+
+<div class="server-name">
+SGDO-1 🇸🇬
+</div>
+
+<div class="ping">
+71ms
+</div>
+
+</div>
+
+<div class="provider">
+Digital Ocean Singapore
+</div>
+
+<div class="price">
+Rp500<span>/Hari</span>
+</div>
+
+<a target="_blank"
+href="https://api.whatsapp.com/send?phone=6283196398692&text=Halo%20Admin%20Saya%20ingin%20order%20VPN%20SGDO-1">
+
+<button class="buy">
+ORDER SEKARANG
+</button>
+
+</a>
+
+</div>
+
+</div>
+
+<div class="navbar">
+
+<div class="nav-item active-nav">
+<i class="fa-solid fa-house"></i>
+Produk
+</div>
+
+<div class="nav-item">
+<i class="fa-solid fa-clock-rotate-left"></i>
+Riwayat
+</div>
+
+<div class="nav-item">
+<i class="fa-solid fa-wallet"></i>
+Mutasi
+</div>
+
+<div class="nav-item">
+<i class="fa-solid fa-user"></i>
+Akun
+</div>
+
+</div>
+
+</body>
+</html>
